@@ -1,9 +1,12 @@
-# 🛒 Market Basket Analysis
-![Market Basket Analysis](https://ars.els-cdn.com/content/image/3-s2.0-B978012381479100006X-f06-01-9780123814791.jpg)
-### 🤔 What's Market Basket Analysis?
-**Market basket analysis** is a powerful data science (data mining) application that improves user experience and encourages purchases by better understanding customer purchasing patterns, which *increase sales and adds direct business value to companies*.
+<h1 align="center">
+  🛒 Market Basket Analysis
+</h1>
 
-Market basket analysis is an analysis technique used by companies to identify combinations of products or items that are often purchased simultaneously in a transaction. By applying this technique, companies can manage product availability (inventory), determine marketing targets and business strategies (determining sales, discounts, etc.).
+<p align="center">
+    <img src="https://ars.els-cdn.com/content/image/3-s2.0-B978012381479100006X-f06-01-9780123814791.jpg" alt="Market Basket Analysis">
+    
+### 🤔 What's Market Basket Analysis?
+**Market basket analysis** is a powerful data science (data mining) application that improves user experience and encourages purchases by better understanding customer purchasing patterns, which *increase sales and adds direct business value to companies*. **Market basket analysis** is an analysis technique used by companies to identify combinations of products or items that are often purchased simultaneously in a transaction. By applying this technique, companies can manage product availability (inventory), determine marketing targets and business strategies (determining sales, discounts, etc.).
 
 ### 🤷‍♂️ How Does Market Basket Analysis Work?
 **Market basket analysis** is a technique for *uncovering associations between items*. By looking at combinations of items that occur simultaneously in transactions, or you could say looking for items that are often purchased by consumers together with other items.
@@ -19,9 +22,10 @@ The Apriori Algorithm has three main components that can be said to be the main 
 - **Lift**, refers to the increase in the ratio of the sale of A when you sell B
 
 ### 🗃️ Dataset
-The dataset used comes from **Kaggle**, it's called **Grocery Dataset** by Heeral Dedhia.
-It contains **3 columns** with **38765 rows/values**.
+<p>The dataset used comes from **Kaggle**, it's called **Grocery Dataset** by Heeral Dedhia.</p> 
+<p>It contains **3 columns** with **38765 rows/values**.</p>
 🗃: [Grocery Dataset️](https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset/data).
+
 Sample dataset:
 | Member_number | Date | itemDescription |
 | --- | --- | --- |
@@ -41,11 +45,28 @@ Sample dataset:
 
 ### 🗂️ Libraries Prequisites
 1. **Pandas**
-    `!pip install pandas`
-    `import pandas as pd`
-2. **Apriori** from MLXtend
-    `!pip install mlxtend`
-    `from mlxtend.frequent_patterns import apriori`
-    `from mlxtend.frequent_patterns import association_rules`
+   ```
+   !pip install pandas
+   import pandas as pd
+   ```
 
-### 🤖 Example Output
+3. **Apriori** from MLXtend
+    ```
+    # if need to be installed
+    !pip install mlxtend
+    ```
+    ```
+    #import the apriori
+    from mlxtend.frequent_patterns import apriori
+    from mlxtend.frequent_patterns import association_rules
+    ```
+
+### 🤖 Result
+![Market Basket Analysis](image/Metrics.PNG)
+
+The resulting table shows that the **five most popular product combinations** that are frequently bought together are:
+- Rolls and Milk
+- Yoghurt and Milk
+- Soda and Vegetables
+- Sausage and Milk
+- Yoghurt and Rolls
