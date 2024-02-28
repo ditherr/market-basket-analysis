@@ -22,8 +22,8 @@ The Apriori Algorithm has three main components that can be said to be the main 
 - **Lift**, refers to the increase in the ratio of the sale of A when you sell B
 
 ### 🗃️ Dataset
-<p>The dataset used comes from **Kaggle**, it's called **Grocery Dataset** by Heeral Dedhia.</p> 
-<p>It contains **3 columns** with **38765 rows/values**.</p>
+<p>The dataset used comes from <b>Kaggle</b>, it's called <b>Grocery Dataset</b> by Heeral Dedhia.</p> 
+<p>It contains <b>3 columns</b> with <b>38765 rows/values</b>.</p>
 🗃: [Grocery Dataset️](https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset/data).
 
 Sample dataset:
